@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="bodyHojaDeVida">
+
+    <nav>
+        <div class="logo">
+            <img src="../../assets/img/sura-logo-white.png" alt="Logo SURA">
+        </div>
+        <div class="nav-links">
+            <a href="../../index.html">Inicio</a>
+            <a href="../Registro/login.html">Iniciar sesión</a>
+            <a href="./perfil.html">Volver al perfil</a>
+        </div>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Editar Perfil del Colaborador</h1>
+
+        <a href="./seguridad.html"><button>cambiar contraseña</button></a>
+
+        <form id="formEditarPerfil" class="formulario-editar">
+
+            <h3>Datos Personales</h3>
+
+            <label>Nombre completo</label>
+            <input type="text" id="edit_nombreCompleto">
+
+            <label>Fecha de nacimiento</label>
+            <input type="text" id="edit_fechaNacimiento">
+
+            <label>Cédula</label>
+            <input type="text" id="edit_cedula">
+
+            <label>Sexo</label>
+            <input type="text" id="edit_sexo">
+
+            <label>Estado civil</label>
+            <input type="text" id="edit_estadoCivil">
+
+            <label>Dirección</label>
+            <input type="text" id="edit_direccion">
+
+            <label>Teléfono</label>
+            <input type="text" id="edit_telefono">
+
+            <label>Correo</label>
+            <input type="email" id="edit_email">
+
+
+            <h3>Perfil Profesional</h3>
+
+            <label>Cargo</label>
+            <input type="text" id="edit_cargo">
+
+            <label>Descripción del perfil profesional</label>
+            <textarea id="edit_perfilProfesional"></textarea>
+
+
+            <h3>Experiencia Laboral</h3>
+
+            <label>Empresa</label>
+            <input type="text" id="edit_exp_empresa">
+
+            <label>Cargo</label>
+            <input type="text" id="edit_exp_cargo">
+
+            <label>Fecha</label>
+            <input type="text" id="edit_exp_fecha">
+
+            <label>Descripción</label>
+            <textarea id="edit_exp_descripcion"></textarea>
+
+
+            <h3>Formación Académica</h3>
+
+            <label>Institución 1</label>
+            <input type="text" id="edit_f1_institucion">
+            <label>Título 1</label>
+            <input type="text" id="edit_f1_titulo">
+            <label>Año 1</label>
+            <input type="number" id="edit_f1_anio">
+
+            <label>Institución 2</label>
+            <input type="text" id="edit_f2_institucion">
+            <label>Título 2</label>
+            <input type="text" id="edit_f2_titulo">
+            <label>Año 2</label>
+            <input type="number" id="edit_f2_anio">
+
+
+            <button type="submit" class="boton">Guardar cambios</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 Campus Corporativo TID – Perfil Colaborador</p>
+    </footer>
+
+    <script type="module" src="../helpers/editarPerfil.js"></script>
+</body>
+
+</html>
